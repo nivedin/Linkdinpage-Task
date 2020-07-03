@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    background: #283e4a;
+    z-index: 99;
+}
+
+
+nav .navContainer{
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    
+}
+nav .navContainer .searchBar{
+    height: 35px;
+    padding-left: 6px;
+    border-radius: 5px;
+    width: 25vw;
+    
+}
+nav .navContainer .searchBar input{
+    height: 35px;
+    border-radius: 5px;
+    width:15vw;
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    
+}
+
+nav .navContainer .navIcons{
+    padding: 5px 0;
+    margin-left:10vw;
+    /* background-color: rgb(15, 0, 83); */
+    color: rgb(230, 230, 230);
+    width: 65vw;
+    height: 100%;
+    justify-content: center;
+    
+}
+
+
+nav .navContainer .logo img{
+    height: 35px;
+}
+
+nav .navContainer .navIcons ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 0.89rem;
+    height: 100%;
+    cursor: pointer;
+}
+nav .navContainer .navIcons ul li:hover{
+    color: rgb(255, 255, 255);
+}
+nav .navContainer .navIcons ul li:active{
+    border-bottom: 2px solid white;
+}
+
+nav .navContainer .navIcons img{
+    height: 20px;
+    
+}
+
+nav .navContainer .navIcons .premiumPara{
+    padding: 7px 0 !important;
+    width: 17%;
+    word-wrap: break-word;
+}
+.main{
+    width: 100%;
+    padding: 120px 60px;
+    background-color: rgb(235, 235, 235);
+}
+.mainContainer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0, 60, 255);
+}
+.mainContainer .leftContent{
+    position: fixed;
+    top: 18%;
+    background-color: rgb(235, 235, 235);
+    min-height: 100vh;
+    width: 250px;
+}
+.mainContainer .leftContent .leftProfile{
+   position: relative;
+    background: rgb(255, 255, 255);
+    height: 50vh;
+    width: 250px;
+    border: 1px solid rgb(189, 189, 189);
+    text-align: center;
+}
+.mainContainer .leftContent .leftProfile .leftProfileBackTop{
+        
+    top: 0;
+    left: 0;
+    height: 50px;
+    background: blue;
+}
+.leftContent .leftProfile .leftMainImage{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+.leftContent .leftProfile .leftMainImage img{
+    height: 100px;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 50%;
+}
+.leftContent .leftProfile .leftMainName{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.leftContent .leftProfile .leftMainDesc{
+    position: absolute;
+    top: 250px;
+    line-height: 20px;
+    left: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+.mainContainer .leftContent .leftRecent{
+    margin-top: 15px;
+    background: rgb(255, 255, 255);
+    height: 50%;
+    width: 250px;
+    border: 1px solid rgb(189, 189, 189);
+}
+.mainContainer .leftContent .leftRecent{
+    padding: 18px 25px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.mainContainer .middleContent{
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    width:100%
+}
+.mainContainer .middleContent .middlePost{
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+    height: 200vh;
+    width:50%
+}
+.mainContainer .middleContent .middlePost .postWrite{
+    -webkit-box-shadow: 7px 9px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 9px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 9px 29px 0px rgba(0,0,0,0.75);
+    height: 180px;
+    background: rgb(255, 255, 255);
+}
+.mainContainer .middleContent .middlePost .postWrite .startPost{
+    cursor: text;
+    display:flex;
+    padding: 50px;
+}
+.mainContainer .middleContent .middlePost .postWrite .startPost:hover{
+    background: rgb(240, 240, 240);
+}
+.mainContainer .middleContent .middlePost .postWrite .startPost img{
+    height: 20px;
+    padding-right: 10px;
+}
+.mainContainer .middleContent .middlePost .postWrite .postIcons{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    cursor: pointer;
+}
+.postContentImage{
+    height: 250px;
+}
+.postContentImage img{
+    height: 100%;
+}
+.mainContainer .middleContent .middlePost .postWrite .postIcons img{
+    height: 20px;
+    padding: 0 10px 0 35px;
+}
+.middlePost .normalPost{
+    line-height: 24px;
+    
+}
+.middlePost .normalPost .postHead{
+    padding: 20px;
+    display: flex;
+    
+}
+.middlePost .normalPost .postHeadIcon img{
+    margin-top: 10px;
+    height: 55px;
+}
+.middlePost .normalPost .postHead .postHeadDesc {
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+}
+.middlePost .normalPost .postContent {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.middlePost .normalPost .postNumber {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.middlePost .normalPost .postNumber img {
+   height: 12px;
+}
+.middlePost .normalPost .postLCSicons {
+    cursor: pointer;
+    padding: 10px 0px;
+    font-size: 15px;
+    color: rgb(122, 122, 122);
+}
+.middlePost .normalPost .postLCSicons img {
+   height: 30px;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+.mainContainer .middleContent .middlePost .post1{
+    margin-top: 50px;
+    border: 1px solid rgb(189, 189, 189);
+  
+    background: rgb(255, 255, 255);
+}
+.mainContainer .middleContent .middlePost .post2{
+    border: 1px solid rgb(189, 189, 189);
+    background: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.mainContainer .middleContent .middlePost .post3{
+    border: 1px solid rgb(189, 189, 189);
+    background: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.mainContainer .middleContent .middlePost .post4{
+    border: 1px solid rgb(189, 189, 189);
+    background: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.mainContainer .rightContent{
+    position: fixed;
+    top: 18%;
+    left: 75%;
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    width: 300px;
+}
+.mainContainer .rightContent .rightNews{
+    padding: 6px;
+    background: rgb(255, 255, 255);
+    height: 270px;
+    width: 300px;
+    border: 1px solid rgb(189, 189, 189);
+}
+.mainContainer .rightContent .rightNews img{
+    height: 100%;
+    width: 100%;
+}
